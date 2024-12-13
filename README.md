@@ -49,7 +49,7 @@ print(f"Found {len(search_results)} objects matching the search criteria.")
 
 **Detailed Usage**
 
-- **Listing All Valid Object IDs**
+1. **Fetching A List of All Valid Object IDs**
 
 Fetch a list of all valid Object IDs from The Met’s collection. You can optionally filter by metadataDate and departmentIds.
 
@@ -76,7 +76,7 @@ department_object_ids = get_all_object_ids(departmentIds=[1, 3, 6])
 print(department_object_ids)
 ```
 
-- **Retrieving Object Records**
+2. **Fetching Object Records**
 
 Fetch detailed information about a specific artwork using its Object ID. You can specify how to handle missing data.
 
@@ -106,7 +106,7 @@ object_data = get_object(
 print(object_data)
 ```
 
-- **Listing All Departments**
+3. **Listing All Departments**
 
 Fetch a list of all departments within The Met, including their IDs and display names.
 
@@ -124,7 +124,7 @@ for dept in departments:
     print(f"ID: {dept['departmentId']}, Name: {dept['displayName']}")
 ```
 
-- **Advanced Search**
+4. **Advanced Search**
 
 Perform complex searches across The Met’s collection using various parameters to filter results.
 
